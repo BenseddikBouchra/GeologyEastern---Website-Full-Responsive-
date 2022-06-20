@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NewRegistration</title>
+    <link rel="stylesheet" href="/css/form.css">
+
+</head>
+
+<body>
+    <h2 style="text-align: center; color:var(--yellow--color); ">Ask A Service</h2>
+    <form style="box-shadow: -1px 1px 30px 10px black; margin-top :90px; margin-bottom: 120px; margin-left: 30%;"
+        name="RegForm" action="/form.php" onsubmit="return W3docs()" method="post" class="w3docs">
+        <div>
+            <label for="Nom">Full name:</label>
+            <input type="text" id="Nom" size="60" name="Nom" />
+        </div>
+        <br />
+        <div>
+            <label for="adresse">Adress:</label>
+            <input type="text" id="adresse" size="60" name="Adresse" />
+        </div>
+        <br />
+        <div>
+            <label for="E-mail" l>Email:</label>
+            <input type="text" id="E-mail" size="60" name="Email" />
+        </div>
+        <br />
+        <div>
+            <label for="Mot de passe">New Password</label>
+            <input type="text" id="Mot de passe" size="60" name="Mot de passe" />
+        </div>
+        <br />
+        <div>
+            <label for="Téléphone">Phone: </label>
+            <input type="text" id="Téléphone" size="60" name="Téléphone" />
+        </div>
+        <br />
+        <div>
+            <label>select a service</label>
+            <select type="text" value="" name="Sujet">
+                <option></option>
+                <option>Geophysics</option>
+                <option>Hydrology & Hydrogeology</option>
+                <option>Formations</option>
+                <option>Database of Geologie</option>
+                <option>Geoscience Mapping</option>
+                <option>Drilling Water Borehole</option>
+                <option>Environment</option>
+
+            </select>
+        </div>
+        <br />
+        <div>
+            <label for="commentaire">Comments: </label>
+            <textarea cols="62" id="commentaire" rows="10" name="Commentaire"></textarea>
+        </div>
+        <div class="buttons">
+            <input id="submit" type="submit" value="Envoyer" name="Envoyer" />
+            <input id="reset" type="reset" value="Réinitialiser" name="Réinitialiser" />
+        </div>
+    </form>
+    <script src="/js/form.js">
+
+
+
+    </script>
+</body>
+
+</html>
